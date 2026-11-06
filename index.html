@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exclusive Info Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <h1>🔐 Exclusive Info Portal</h1>
+    <p>Your gateway to exclusive information!</p>
+</header>
+
+<main class="container">
+
+    <section id="welcome">
+        <h2>Welcome, Visitor!</h2>
+        <p>
+            You have been selected to access our exclusive information.
+            Before continuing, please review our terms and conditions.
+        </p>
+
+        <div class="notice">
+            <strong>Important:</strong> This is a simulated website
+            created for cybersecurity education. Never enter real personal information.
+        </div>
+
+        <p>
+            <a href="terms.html" id="termsLink">
+                📄 Read Terms and Conditions
+            </a>
+        </p>
+
+        <form id="accessForm">
+
+            <label class="check-label">
+                <input type="checkbox" id="agree">
+                I agree to the terms and conditions.
+            </label>
+
+            <h3>Optional Visitor Information</h3>
+
+            <label for="visitorName">Your name:</label>
+            <input
+                type="text"
+                id="visitorName"
+                placeholder="Enter a FAKE name"
+            >
+
+            <label for="visitorEmail">Your email:</label>
+            <input
+                type="email"
+                id="visitorEmail"
+                placeholder="Enter a FAKE email"
+            >
+
+            <button type="submit">Unlock Exclusive Information</button>
+        </form>
+    </section>
+
+    <section id="quizSection" class="hidden">
+
+        <h2>🎉 Access Granted!</h2>
+
+        <p>
+            Here is your exclusive information:
+        </p>
+
+        <div class="fake-info">
+            <h3>Secret Information</h3>
+            <p>Project Name: Operation Digital Safety</p>
+            <p>Access Code: FAKE-12345</p>
+            <p>Security Level: Educational Simulation</p>
+        </div>
+
+        <div class="notice">
+            Surprise! This was actually a cybersecurity awareness test.
+            Your choices have affected your score.
+        </div>
+
+        <h2>🧠 Cybersecurity Quiz</h2>
+
+        <p>Answer the questions to test your online safety knowledge.</p>
+
+        <form id="quizForm">
+
+            <div class="question">
+                <p>1. What should you do before accepting website terms?</p>
+                <label><input type="radio" name="q1" value="wrong"> Accept immediately</label>
+                <label><input type="radio" name="q1" value="correct"> Read and understand them</label>
+                <label><input type="radio" name="q1" value="wrong"> Ignore them</label>
+            </div>
+
+            <div class="question">
+                <p>2. Should you share personal information with an unfamiliar website?</p>
+                <label><input type="radio" name="q2" value="wrong"> Yes, always</label>
+                <label><input type="radio" name="q2" value="correct"> No, unless there is a legitimate need and you trust the site</label>
+                <label><input type="radio" name="q2" value="wrong"> It doesn't matter</label>
+            </div>
+
+            <div class="question">
+                <p>3. What does HTTPS help indicate?</p>
+                <label><input type="radio" name="q3" value="correct"> The connection is encrypted</label>
+                <label><input type="radio" name="q3" value="wrong"> The website is guaranteed safe</label>
+                <label><input type="radio" name="q3" value="wrong"> The website cannot steal information</label>
+            </div>
+
+            <div class="question">
+                <p>4. What should you do if a website asks for unnecessary information?</p>
+                <label><input type="radio" name="q4" value="wrong"> Give it everything</label>
+                <label><input type="radio" name="q4" value="correct"> Stop and question why it is needed</label>
+                <label><input type="radio" name="q4" value="wrong"> Ignore the warning signs</label>
+            </div>
+
+            <div class="question">
+                <p>5. What is a strong way to protect online accounts?</p>
+                <label><input type="radio" name="q5" value="wrong"> Use the same password everywhere</label>
+                <label><input type="radio" name="q5" value="wrong"> Share passwords with friends</label>
+                <label><input type="radio" name="q5" value="correct"> Use unique passwords and multifactor authentication</label>
+            </div>
+
+            <button type="submit">Submit Quiz</button>
+        </form>
+
+        <div id="results" class="hidden">
+            <h2>Your Results</h2>
+            <h3 id="finalScore"></h3>
+            <p id="resultMessage"></p>
+
+            <a href="safety.html" class="safety-link">
+                🛡️ Learn How to Stay Safe Online
+            </a>
+
+            <button onclick="location.reload()">Play Again</button>
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>Cybersecurity Awareness Project | Educational Simulation</p>
+</footer>
+
+</body>
+</html>

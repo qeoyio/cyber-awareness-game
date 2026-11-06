@@ -1,0 +1,140 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #101827;
+    color: #f1f5f9;
+    line-height: 1.6;
+}
+
+header {
+    background: #172554;
+    text-align: center;
+    padding: 30px 15px;
+    border-bottom: 3px solid #38bdf8;
+}
+
+header h1 {
+    color: #38bdf8;
+    margin: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 35px auto;
+    padding: 30px;
+    background: #1e293b;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px #0005;
+}
+
+h2, h3 {
+    color: #38bdf8;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    background: #0f172a;
+    border: 1px solid #475569;
+    border-radius: 6px;
+    color: white;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    accent-color: #38bdf8;
+}
+
+.check-label {
+    margin: 20px 0;
+}
+
+button,
+.safety-link {
+    display: inline-block;
+    background: #0284c7;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+button:hover,
+.safety-link:hover {
+    background: #0369a1;
+}
+
+a {
+    color: #38bdf8;
+}
+
+.notice {
+    background: #422006;
+    border-left: 4px solid #f59e0b;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.fake-info {
+    background: #0f172a;
+    border: 1px solid #334155;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.question {
+    background: #0f172a;
+    padding: 18px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.question label {
+    padding: 5px;
+    color: #cbd5e1;
+}
+
+.hidden {
+    display: none;
+}
+
+#results {
+    border-top: 2px solid #38bdf8;
+    margin-top: 30px;
+    padding-top: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #94a3b8;
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin: 15px;
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+}
